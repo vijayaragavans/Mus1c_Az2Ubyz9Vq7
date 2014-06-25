@@ -1,0 +1,26 @@
+.sng-mgmt .elastislide-carousel ul li a img{border-radius:20px;}
+.sng-mgmt h2
+{
+	text-align: left;
+	padding:2%;
+	font-size: 24px;
+	font-weight: bold;
+	color: #3c8dbc;
+}
+.modal .modal-footer,
+.modal .modal-header,
+.modal .modal-body
+{
+background: white;
+color:black;
+}
+.modal .modal-header{
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+margin: 0px;
+}
+.modal .modal-footer{
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+margin: 0px;
+}

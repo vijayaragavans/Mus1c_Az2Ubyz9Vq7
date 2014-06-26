@@ -954,3 +954,195 @@ Stack trace:
 REQUEST_URI=/musicstore/index.php/site/songs.html
 HTTP_REFERER=http://admin.localhost.com/musicstore/index.php/site/dashboard
 ---
+2014/06/26 16:34:10 [error] [php] Undefined variable: model (C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\views\site\index.php:24)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicstore/
+in C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\views\site\index.php (24)
+in C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\controllers\SiteController.php (32)
+in C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php (13)
+2014/06/26 16:34:13 [error] [php] Undefined variable: model (C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\views\site\index.php:24)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicstore/
+in C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\views\site\index.php (24)
+in C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\controllers\SiteController.php (32)
+in C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php (13)
+2014/06/26 16:39:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "songs.html".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('songs.html')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('songs.html')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/songs.html')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/songs.html
+HTTP_REFERER=http://admin.localhost.com/musicstore/index.php/site/dashboard
+---
+2014/06/26 16:46:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('pages')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('pages')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/pages/mail...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/pages/mailbox.html
+HTTP_REFERER=http://admin.localhost.com/musicstore/index.php/site/dashboard
+---
+2014/06/26 16:46:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('pages')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('pages')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/pages/exam...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/pages/examples/invoice.html
+HTTP_REFERER=http://admin.localhost.com/musicstore/index.php/site/dashboard
+---
+2014/06/26 16:56:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "songs.html".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('songs.html')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('songs.html')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/songs.html')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/songs.html
+HTTP_REFERER=http://admin.localhost.com/musicstore/index.php/site/dashboard
+---
+2014/06/26 16:57:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('pages')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('pages')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/pages/mail...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/pages/mailbox.html
+HTTP_REFERER=http://admin.localhost.com/musicstore/index.php/site/dashboard
+---
+2014/06/26 16:57:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('pages')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('pages')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/pages/exam...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/site/pages/examples/lockscreen.html
+HTTP_REFERER=http://admin.localhost.com/musicstore/index.php/site/dashboard
+---
+2014/06/26 17:26:42 [error] [php] Undefined variable: data (C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\views\tblSongs\index.php:15)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): TblSongsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): TblSongsController->renderPartial()
+#2 C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\controllers\TblSongsController.php(128): TblSongsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): TblSongsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): TblSongsController->runAction()
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): TblSongsController->filterAccessControl()
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(266): TblSongsController->runActionWithFilters()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(283): TblSongsController->run()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php(13): CWebApplication->run()
+REQUEST_URI=/musicstore/index.php/tblsongs/index
+in C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\views\tblSongs\index.php (15)
+in C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\controllers\TblSongsController.php (128)
+in C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php (13)
+2014/06/26 17:32:39 [error] [exception.CException] exception 'CException' with message 'TblSongsController cannot find the requested view "top_header".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\views\tblSongs\index.php(12): CController->renderPartial('top_header')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#5 C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\controllers\TblSongsController.php(128): CController->render('index', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): TblSongsController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('tblsongs/index')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/musicstore/index.php/tblsongs/index
+---
+2014/06/26 17:33:12 [error] [exception.CException] exception 'CException' with message 'TblSongsController cannot find the requested view "sidebar_menu".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\views\tblSongs\index.php(18): CController->renderPartial('sidebar_menu')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Hai...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Hai...', Array, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Hai...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#5 C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\controllers\TblSongsController.php(128): CController->render('index', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): TblSongsController->actionIndex()
+#7 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('tblsongs/index')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/musicstore/index.php/tblsongs/index
+---
+2014/06/26 17:34:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dashboard.html".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('dashboard.html')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('dashboard.html')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('tblsongs/dashbo...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/tblsongs/dashboard.html
+HTTP_REFERER=http://admin.localhost.com/musicstore/index.php/tblsongs/index
+---
+2014/06/26 17:35:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dashboard.html".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('dashboard.html')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('dashboard.html')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('tblsongs/dashbo...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/musicstore/index.php/tblsongs/dashboard.html
+HTTP_REFERER=http://admin.localhost.com/musicstore/index.php/tblsongs/index
+---

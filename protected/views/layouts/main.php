@@ -5,6 +5,25 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
 
+        <!-- bootstrap 3.0.2 -->
+        <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- font Awesome -->
+        <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Ionicons -->
+        <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Morris chart -->
+        <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/morris/morris.css" rel="stylesheet" type="text/css" />
+        <!-- jvectormap -->
+        <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+        <!-- fullCalendar -->
+        <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+        <!-- Daterange picker -->
+        <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+        <!-- bootstrap wysihtml5 - text editor -->
+        <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+        <!-- Theme style -->
+        <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/AdminLTE.css" rel="stylesheet" type="text/css" />
+
 	<!-- blueprint CSS framework -->
 <!-- 	<link rel="stylesheet" type="text/css" href="<?php //echo Yii::app()->request->baseUrl; ?>/<?php echo Yii::app()->request->baseUrl; ?>/files/css/screen.css" media="screen, projection" />
 	<link rel="stylesheet" type="text/css" href="<?php //echo Yii::app()->request->baseUrl; ?>/<?php echo Yii::app()->request->baseUrl; ?>/files/css/print.css" media="print" />

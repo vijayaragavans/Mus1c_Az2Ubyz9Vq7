@@ -29,7 +29,11 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		if(Yii::app()->user->name =='Guest')
+				$this->redirect('/musicstore/index.php/site/login');
+		else
+				$this->redirect('/musicstore/index.php/site/dashboard');
+
 	}
 
 	/**

@@ -30,7 +30,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="songs.html">
+                            <a href="/musicstore/index.php/tblsongs/index">
                                 <i class="fa fa-dashboard"></i> <span>Songs</span>
                             </a>
                         </li>                        

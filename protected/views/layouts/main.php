@@ -58,9 +58,6 @@
 </head>
 
 <body>
-
-<!-- <div class="container" id="page">
- -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
@@ -70,14 +67,12 @@
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
-
-	<div id="footer">
+	<footer style='text-align:center;'>
 		Copyright &copy; <?php echo date('Y'); ?> by <?php echo  Yii::app()->params['project'];; ?><br/>
 		All Rights Reserved.<br/>
 		Powered By <a href=" <?php echo Yii::app()->params['powered_by']; ?>"><?php echo Yii::app()->params['powered_by'];?></a>
-	</div><!-- footer -->
+	</footer><!-- footer -->
 
-</div><!-- page -->
 
 </body>
 </html>

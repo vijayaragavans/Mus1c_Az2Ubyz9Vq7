@@ -30,9 +30,9 @@ class SiteController extends Controller
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		if(Yii::app()->user->name =='Guest')
-				$this->redirect('/musicstore/index.php/site/login');
+			$this->redirect('/musicstore/index.php/site/login');
 		else
-				$this->redirect('/musicstore/index.php/site/dashboard');
+			$this->redirect('/musicstore/index.php/site/dashboard');
 
 	}
 
@@ -76,13 +76,21 @@ class SiteController extends Controller
 		$this->render('contact',array('model'=>$model));
 	}
 
+	public function user_validate(){
+		if(Yii::app()->user->name == 'Guest')
+		{
+			$this->redirect('/musicstore/index.php/site/login');
+		}else{
+			$this->redirect('/musicstore/index.php/site/dashboard');
+		}
+	}
+
 	/**
 	 * Displays the login page
 	 */
 	public function actionLogin()
 	{
 		$model=new LoginForm;
-
 		// if it is ajax validation request
 		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
 		{
@@ -117,7 +125,7 @@ class SiteController extends Controller
 	public function actionDashboard(){
 		if( Yii::app()->user->name == 'Guest')
 		{
-			$this->redirect('/musicstore/index.php/site/login');			
+			$this->redirect('/musicstore/index.php/site/login');
 		}else{
 			$this->render('dashboard');
 		}

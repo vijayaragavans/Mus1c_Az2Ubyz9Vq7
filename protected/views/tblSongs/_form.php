@@ -1,7 +1,10 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'tbl-songs-form',
 	'enableAjaxValidation'=>false,
-)); ?>
+)); 
+	//$model = new TblAlbumCategory();
+	    $data=  TblAlbumCategory::model()->findAll();
+?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
@@ -15,18 +18,17 @@
                                         </div>
                                         <div class="form-group">
 				<?php echo $form->labelEx($model,'song_category'); ?>
-				<?php echo $form->textField($model,'song_category'); ?>
+				<select name="TblSongs[song_category]" id="TblSongs_song_category">
+				<?php  foreach ($data as $value) {  ?>
+	 				<option value="<?php echo $value->album_category_id; ?>"><?php echo $value->album_category_name; ?></option>	
+				<?php } ?>
+				</select>
 				<?php echo $form->error($model,'song_category'); ?>
                                         </div>
                                         <div class="form-group">
 				<?php echo $form->labelEx($model,'song_description'); ?>
 				<?php echo $form->textArea($model,'song_description',array('rows'=>6, 'cols'=>50)); ?>
 				<?php echo $form->error($model,'song_description'); ?>
-                                        </div>
-                                        <div class="form-group">
-				<?php echo $form->labelEx($model,'cong_created_on'); ?>
-				<?php echo $form->textField($model,'cong_created_on'); ?>
-				<?php echo $form->error($model,'cong_created_on'); ?>
                                         </div>
 			<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class' => 'btn btn-primary')); ?>
 

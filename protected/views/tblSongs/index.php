@@ -22,12 +22,12 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Dashboard
-                        <small>Control panel</small>
+                        Music eStore
+                        <small>Manage Songs</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li class="active">Dashboard</li>
+                        <li class="active">Manage Songs</li>
                     </ol>
                 </section>
 
@@ -36,8 +36,8 @@
 
 		<div class="box">
                                 <div class="box-header">
-                                    <h3 class="box-title">Data Table With Full Features</h3>                                    
                                     <div><a href="/musicstore/index.php/tblsongs/create">Upload New Songs</a></div>
+                                    <div><a href="/musicstore/index.php/tblsongs/admin">Manage Songs</a></div>
                                 </div><!-- /.box-header -->
                                 <div class="box-body table-responsive">
                                     <table id="example1" class="table table-bordered table-striped">
@@ -55,15 +55,6 @@
 			<?php
 			/* @var $this TblSongsController */
 			/* @var $dataProvider CActiveDataProvider */
-
-			$this->breadcrumbs=array(
-				'Tbl Songs',
-			);
-
-			$this->menu=array(
-				array('label'=>'Create TblSongs', 'url'=>array('create')),
-				array('label'=>'Manage TblSongs', 'url'=>array('admin')),
-			);
 			?>
 
 			<h1>Tbl Songs</h1>

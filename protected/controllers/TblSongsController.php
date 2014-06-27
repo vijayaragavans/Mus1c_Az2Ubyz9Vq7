@@ -2,6 +2,8 @@
 
 class TblSongsController extends Controller
 {
+
+	private $current_date;
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -63,13 +65,14 @@ class TblSongsController extends Controller
 	public function actionCreate()
 	{
 		$model=new TblSongs;
-
+		$this->current_date = date('Y-m-d H:i:s');
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['TblSongs']))
 		{
 			$model->attributes=$_POST['TblSongs'];
+			$model->cong_created_on = "$this->current_date";
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->song_id));
 		}

@@ -39,7 +39,7 @@ class TblAdmins extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_name, user_password, user_privilages, user_created_on', 'required'),
+			//array('user_name,  user_privilages, user_created_on', 'required'),
 			array('user_name, user_password, user_privilages', 'length', 'max'=>250),
 			array('user_is_active', 'length', 'max'=>1),
 			// The following rule is used by search().

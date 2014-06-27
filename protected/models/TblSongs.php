@@ -38,7 +38,7 @@ class TblSongs extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('song_title, song_category, song_description, cong_created_on', 'required'),
+			array('song_title, song_category, song_description', 'required'),
 			array('song_category', 'numerical', 'integerOnly'=>true),
 			array('song_title', 'length', 'max'=>250),
 			// The following rule is used by search().

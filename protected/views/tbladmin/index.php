@@ -1,20 +1,9 @@
 <?php
-/* @var $this TblSongsController */
-/* @var $model TblSongs */
+/* @var $this TbladminController */
 
-
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
-});
-$('.search-form form').submit(function(){
-	$.fn.yiiGridView.update('tbl-songs-grid', {
-		data: $(this).serialize()
-	});
-	return false;
-});
-");
+$this->breadcrumbs=array(
+	'Manage User',
+);
 ?>
         <!-- DATA TABLES -->
         <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
@@ -40,7 +29,7 @@ $('.search-form form').submit(function(){
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Dashboard
+                        Music eStore
                         <small>Manage Songs</small>
                     </h1>
                     <ol class="breadcrumb">
@@ -52,31 +41,43 @@ $('.search-form form').submit(function(){
                 <!-- Main content -->
                 <section class="content">
 
+<?php $form=$this->beginWidget('CActiveForm', array(
+	'id'=>'profile-form',
+	'enableAjaxValidation'=>false,
+)); ?> 
+
 		<div class="box">
-			<h1>Manage Songs</h1>
+                                <div class="box-header">
+                                </div><!-- /.box-header -->
+                                <div class="box-body table-responsive">
 
-			<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-			<div class="search-form" style="display:none">
-			<?php $this->renderPartial('_search',array(
-				'model'=>$model,
-			)); ?>
-			</div><!-- search-form -->
 
-			<?php $this->widget('zii.widgets.grid.CGridView', array(
-				'id'=>'tbl-songs-grid',
-				'dataProvider'=>$model->search(),
-				'filter'=>$model,
-				'columns'=>array(
-					'song_id',
-					'song_title',
-					'song_category',
-					'song_description',
-					'cong_created_on',
-					array(
-						'class'=>'CButtonColumn',
-					),
-				),
-			)); ?>
+		<div class="box-body">
+                                        <div class="form-group">
+                                        </div>
+                                        <div class="form-group">
+				<?php echo $form->labelEx($model,'user_name'); ?>
+				<?php echo $form->textField($model,'user_name',array('size'=>60,'maxlength'=>250)); ?>
+				<?php echo $form->error($model,'user_name'); ?>
+                                        </div>
+                                        <div class="form-group">
+				<?php echo $form->labelEx($model,'user_password'); ?>
+				<?php echo $form->textField($model,'user_password'); ?>
+				<?php echo $form->error($model,'user_password'); ?>
+                                        </div>
+
+                                        <div class="form-group">
+				<?php echo $form->labelEx($model,'user_thumb'); ?>
+				<?php echo $form->fileField($model,'user_thumb'); ?>
+				<?php echo $form->error($model,'user_thumb'); ?>
+                                        </div>
+			<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class' => 'btn btn-primary')); ?>
+
+                                    </div><!-- /.box-body -->
+
+<?php $this->endWidget(); ?>
+
+                                </div><!-- /.box-body -->
                             </div><!-- /.box -->
                             </tbody>
                          </table>
@@ -86,5 +87,4 @@ $('.search-form form').submit(function(){
                     </aside>
                   </div>
                 </div>               
-
 

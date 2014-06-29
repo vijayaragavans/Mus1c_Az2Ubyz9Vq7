@@ -3003,3 +3003,31 @@ Stack trace:
 REQUEST_URI=/musicstore/index.php/tblsongs/dashboard.html
 HTTP_REFERER=http://admin.localhost.com/musicstore/index.php/tblsongs/11
 ---
+2014/06/29 16:21:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'rightern_news'@'localhost' (using password: YES)' in C:\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(619): CApplication->getDb()
+#5 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2262): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(383): CActiveRecordMetaData->__construct(Object(TblAdmins))
+#7 C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\models\TblAdmins.php(23): CActiveRecord::model('TblAdmins')
+#8 C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\components\UserIdentity.php(22): TblAdmins::model()
+#9 C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#10 C:\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#11 C:\wamp\www\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#12 C:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#13 C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\controllers\SiteController.php(106): CModel->validate()
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#15 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#20 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/musicstore/index.php/site/login
+HTTP_REFERER=http://admin.localhost.com/musicstore/index.php/site/login
+---

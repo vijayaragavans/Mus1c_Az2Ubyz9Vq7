@@ -1,0 +1,5 @@
+DirectoryIndex index.php
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.*?)index\.php([^\s]*) [NC]
+RewriteRule ^ /%1%2 [R=301,L,NE]

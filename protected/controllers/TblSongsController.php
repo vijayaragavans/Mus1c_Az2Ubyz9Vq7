@@ -68,13 +68,30 @@ class TblSongsController extends Controller
 		$this->current_date = date('Y-m-d H:i:s');
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
 		if(isset($_POST['TblSongs']))
 		{
 			$model->attributes=$_POST['TblSongs'];
+			/*
+			*	Purpose: Upload Song Thumb Image
+			*/
+		              $song_img_name = $_FILES['TblSongs']['name']['song_img_url'];		// Getting Uploaded Image Name
+		              $song_img_temp_name = $_FILES['TblSongs']['tmp_name']['song_img_url'];		// Getting Uploaded Image Temp  Name
+			$song_img_url = TbladminController::Uploader( $song_img_name, $song_img_temp_name, $type = 'image', Yii::app()->params['song_thumb_url']);
+
+			/*
+			*	Purpose: Upload Songs
+			*/
+		              $song_name = $_FILES['TblSongs']['name']['song_url'];		// Getting Uploaded Image Name
+		              $song_temp_name = $_FILES['TblSongs']['tmp_name']['song_url'];		// Getting Uploaded Image Temp  Name
+			$song_url = TbladminController::Uploader( $song_name, $song_temp_name, $type = 'music', Yii::app()->params['song_url']);
+			$model->song_img_url = "$song_img_url";
+			$model->song_url = "$song_url";
 			$model->cong_created_on = "$this->current_date";
-			if($model->save())
+			if($model->save()){
 				$this->redirect(array('view','id'=>$model->song_id));
+			}else{
+				Yii::app()->user->setFlash('error', "File format is mismatching. Try Again");				
+			}
 		}
 
 		$this->render('create',array(

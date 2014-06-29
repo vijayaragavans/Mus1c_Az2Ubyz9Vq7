@@ -1,6 +1,7 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'tbl-songs-form',
 	'enableAjaxValidation'=>false,
+    'htmlOptions'=>array('enctype'=>'multipart/form-data'),
 )); 
 	//$model = new TblAlbumCategory();
 	    $data=  TblAlbumCategory::model()->findAll();
@@ -29,6 +30,21 @@
 				<?php echo $form->labelEx($model,'song_description'); ?>
 				<?php echo $form->textArea($model,'song_description',array('rows'=>6, 'cols'=>50)); ?>
 				<?php echo $form->error($model,'song_description'); ?>
+                                        </div>
+                                        <div class="form-group">
+				<?php echo $form->labelEx($model,'song_img_url'); ?>
+				<?php echo $form->fileField($model,'song_img_url'); ?>
+				<?php echo $form->error($model,'song_img_url'); ?>
+                                        </div>
+                                        <div class="form-group">
+				<?php echo $form->labelEx($model,'song_url'); ?>
+				<?php echo $form->fileField($model,'song_url'); ?>
+				<?php echo $form->error($model,'song_url'); ?>
+                                        </div>
+                                        <div class="form-group">
+				<?php echo $form->labelEx($model,'song_tags'); ?>
+				<?php echo $form->textField($model,'song_tags'); ?>
+				<?php echo $form->error($model,'song_tags'); ?>
                                         </div>
 			<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class' => 'btn btn-primary')); ?>
 

@@ -200,14 +200,14 @@
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
-                                <span><?php echo Yii::app()->user->name; ?> <i class="caret"></i></span>
+                                <span><?php echo Yii::app()->session['user_name']; ?> <i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
-                                    <img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/avatar3.png" class="img-circle" alt="User Image" />
+                                    <img src="<?php echo Yii::app()->params['img_browse_url'].''.Yii::app()->session['user_thumb']; ?>" class="img-circle" alt="User Image" />
                                     <p>
-                                        <?php echo Yii::app()->user->name; ?>
+                                        <?php echo Yii::app()->session['user_name']; ?>
                                         <small>Member since Nov. 2012</small>
                                     </p>
                                 </li>

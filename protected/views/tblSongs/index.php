@@ -36,8 +36,7 @@
 
 		<div class="box">
                                 <div class="box-header">
-                                    <div><a href="/musicstore/index.php/tblsongs/create">Upload New Songs</a></div>
-                                    <div><a href="/musicstore/index.php/tblsongs/admin">Manage Songs</a></div>
+                                    <div><a href="/musicstore/index.php/tblsongs/create">Upload New Songs</a><span> ------   </span>        <a href="/musicstore/index.php/tblsongs/admin">Manage Songs</a></div>
                                 </div><!-- /.box-header -->
                                 <div class="box-body table-responsive">
                                     <table id="example1" class="table table-bordered table-striped">

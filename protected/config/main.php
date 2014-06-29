@@ -16,8 +16,10 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.controllers.*',
 	),
 
+ 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 		
@@ -28,6 +30,7 @@ return array(
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
 	
+
 	),
 
 	// application components
@@ -36,7 +39,10 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-		// uncomment the following to enable URLs in path-format
+		 'upload'=>array(
+		            'class'=>'ext.upload.components.UploadComponents'
+		           ),
+           		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
@@ -52,6 +58,14 @@ return array(
 		),
 */		// uncomment the following to use a MySQL database
 		
+/*		'db'=>array(
+			'connectionString' => 'mysql:host=localhost;dbname=rightern_musicstore',
+			'emulatePrepare' => true,
+			'username' => 'rightern_news',
+			'password' => 'M0nster.com',
+			'charset' => 'utf8',
+		),
+*/
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=musicstore',
 			'emulatePrepare' => true,
@@ -88,6 +102,10 @@ return array(
 		'adminEmail'=>'webmaster@example.com',
 		'powered_by' => 'www.haiinteractive.com',
 		'project' => 'Music eStore',
+		'img_browse_url' => 'http://admin.localhost.com/musicstore/images/',
+		'img_thumb_url' => 'C:/wamp/www/Hai_interactive/adminpanel/musicstore/images/',		
+		'song_thumb_url' => 'C:/wamp/www/Hai_interactive/adminpanel/musicstore/images/songs_thumb/',
+		'song_url' => 'C:/wamp/www/Hai_interactive/adminpanel/musicstore/images/songs/',
 	),
 
 

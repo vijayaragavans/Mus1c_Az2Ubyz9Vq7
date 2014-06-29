@@ -40,11 +40,12 @@ class TblAdmins extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			//array('user_name,  user_privilages, user_created_on', 'required'),
-			array('user_name, user_password, user_privilages', 'length', 'max'=>250),
+			array('user_name, user_password, user_thumb, user_privilages', 'length', 'max'=>250),
 			array('user_is_active', 'length', 'max'=>1),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('user_id, user_name, user_password, user_privilages, user_is_active, user_created_on', 'safe', 'on'=>'search'),
+			array('user_id, user_name, user_password, user_privilages, user_thumb, user_is_active, user_created_on', 'safe', 'on'=>'search'),
+		           //statusVar assign the upload status to model's $file_status property so this property is must
 		);
 	}
 
@@ -68,6 +69,7 @@ class TblAdmins extends CActiveRecord
 			'user_id' => 'User',
 			'user_name' => 'User Name',
 			'user_password' => 'User Password',
+			'user_thumb' => 'User Thumb',
 			'user_privilages' => 'User Privilages',
 			'user_is_active' => 'User Is Active',
 			'user_created_on' => 'User Created On',

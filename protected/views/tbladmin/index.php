@@ -44,6 +44,7 @@ $this->breadcrumbs=array(
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'profile-form',
 	'enableAjaxValidation'=>false,
+    'htmlOptions'=>array('enctype'=>'multipart/form-data'),
 )); ?> 
 
 		<div class="box">

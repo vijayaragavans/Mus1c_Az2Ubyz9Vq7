@@ -36,28 +36,13 @@
 
 		<div class="box">
                                 <div class="box-header">
-                                    <h3 class="box-title">Data Table With Full Features</h3>                                    
-                                    <div><a href="/musicstore/index.php/tblsongs/create">Upload New Songs</a></div>
                                 </div><!-- /.box-header -->
                                 <div class="box-body table-responsive">
 
-			<?php
-			/* @var $this TblSongsController */
-			/* @var $model TblSongs */
-
-			$this->breadcrumbs=array(
-				'Tbl Songs'=>array('index'),
-				'Create',
-			);
-
-			$this->menu=array(
-				array('label'=>'List TblSongs', 'url'=>array('index')),
-				array('label'=>'Manage TblSongs', 'url'=>array('admin')),
-			);
-			?>
-
 			<h1>Create TblSongs</h1>
-
+                                            <div class="error">
+                                                <?php echo Yii::app()->user->getFlash('error'); ?>
+                                            </div>
 			<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->

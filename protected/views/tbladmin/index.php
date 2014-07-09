@@ -63,7 +63,7 @@ $this->breadcrumbs=array(
                                         </div>
                                         <div class="form-group">
 				<?php echo $form->labelEx($model,'user_password'); ?>
-				<?php echo $form->textField($model,'user_password'); ?>
+				<?php echo $form->passwordField($model,'user_password'); ?>
 				<?php echo $form->error($model,'user_password'); ?>
                                         </div>
 

@@ -99,17 +99,28 @@ return array(
 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
+	// Localhost Uploader Setup
+/*	'params'=>array(
+		// this is used in contact page
+		'adminEmail'=>'webmaster@example.com',
+		'powered_by' => 'www.haiinteractive.com',
+		'project' => 'Music eStore',
+		'img_browse_url' => 'http://demo.localhost.com/musicestore/images/',
+		'img_thumb_url' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/',		
+		'song_thumb_url' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/songs_thumb/',
+		'song_url' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/songs/',
+	),
+*/	// Staging Server Uploader Config
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 		'powered_by' => 'www.haiinteractive.com',
 		'project' => 'Music eStore',
-		'img_browse_url' => 'http://admin.localhost.com/musicstore/images/',
-		'img_thumb_url' => 'C:/wamp/www/Hai_interactive/adminpanel/musicstore/images/',		
-		'song_thumb_url' => 'C:/wamp/www/Hai_interactive/adminpanel/musicstore/images/songs_thumb/',
-		'song_url' => 'C:/wamp/www/Hai_interactive/adminpanel/musicstore/images/songs/',
+		'img_browse_url' => 'http://demo.localhost.com/musicestore/images/',
+		'img_thumb_url' => '/home3/rightern/public_html/demo/musicestore/images/',		
+		'song_thumb_url' => '/home3/rightern/public_html/demo/musicestore/images/songs_thumb/',
+		'song_url' => '/home3/rightern/public_html/demo/musicestore/images/songs/',
 	),
-
 
 );
 

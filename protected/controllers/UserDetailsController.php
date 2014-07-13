@@ -1,5 +1,5 @@
 <?php
-
+ 
 class UserDetailsController extends Controller
 {
 	/**

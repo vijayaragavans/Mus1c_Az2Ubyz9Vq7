@@ -16,7 +16,6 @@
                         <li>
                             <a href="/musicstore/index.php/userDetails/index">
                                 <i class="fa fa-calendar"></i> <span>Users</span>
-                                <small class="badge pull-right bg-red">3</small>
                             </a>
                         </li>
                         <li>

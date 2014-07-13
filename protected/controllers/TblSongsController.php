@@ -77,7 +77,6 @@ class TblSongsController extends Controller
 		              $song_img_name = $_FILES['TblSongs']['name']['song_img_url'];		// Getting Uploaded Image Name
 		              $song_img_temp_name = $_FILES['TblSongs']['tmp_name']['song_img_url'];		// Getting Uploaded Image Temp  Name
 			$song_img_url = TbladminController::Uploader( $song_img_name, $song_img_temp_name, $type = 'image', Yii::app()->params['song_thumb_url']);
-
 			/*
 			*	Purpose: Upload Songs
 			*/

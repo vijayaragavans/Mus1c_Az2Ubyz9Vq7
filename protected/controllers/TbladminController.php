@@ -56,6 +56,7 @@
 			 if (TbladminController::ValidateExtension( $type, $extension ) == false) 
 			  {
 				$errors=1;
+				die("Extension Error");
 				return $errors;
 			  }
 			 else
@@ -81,16 +82,16 @@
 	public function ValidateExtension( $type, $extension )
 	{
 		if($type == 'image'){
-			if( ($extension != "jpg") || ($extension != "jpeg") || ($extension != "png") || ($extension != "gif") ){
-				return false;
-			}else{
+			if( ($extension == "jpg") || ($extension == "jpeg") || ($extension == "JPEG")|| ($extension == "png") || ($extension == "gif") ){
 				return true;
+			}else{
+				return false;
 			}			
 		}elseif($type == 'music'){
-			if( ($extension != "mp3") || ($extension != "aac") || ($extension != "wmp") || ($extension != "amr") ){
-				return false;
-			}else{
+			if( ($extension == "mp3") || ($extension == "aac") || ($extension == "wmp") || ($extension == "amr") ){
 				return true;
+			}else{
+				return false;
 			}			
 		}
 	}

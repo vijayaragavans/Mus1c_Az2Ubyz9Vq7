@@ -116,7 +116,7 @@ return array(
 		'adminEmail'=>'webmaster@example.com',
 		'powered_by' => 'www.haiinteractive.com',
 		'project' => 'Music eStore',
-		'img_browse_url' => 'http://demo.localhost.com/musicestore/images/',
+		'img_browse_url' => 'http://demo.haiinteractive.com/musicestore/images/',
 		'img_thumb_url' => '/home3/rightern/public_html/demo/musicestore/images/',		
 		'song_thumb_url' => '/home3/rightern/public_html/demo/musicestore/images/songs_thumb/',
 		'song_url' => '/home3/rightern/public_html/demo/musicestore/images/songs/',

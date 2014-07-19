@@ -70,12 +70,14 @@
 					 return $errors;
 				}
 */
-				move_uploaded_file($temp_name, $Url. $thumb_name) or die( 'Error in Moving Files');
+				 $image_name=time().$thumb_name;
+				 $new_file = $Url.$image_name;
+				move_uploaded_file($temp_name, $new_file ) or die( 'Error in Moving Files');
 			}
 		}
 		 if(!$errors) 
 		 {
-		 	return $thumb_name;
+		 	return $image_name;
 		 }	
 	}
 

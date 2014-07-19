@@ -10,18 +10,17 @@
                         </li>
                         <li>
                             <a href="/musicstore/index.php/tblsongs/index">
-                                <i class="fa fa-dashboard"></i> <span>Songs</span>
+                                <i class="fa fa-dashboard"></i> <span> Manage Songs</span>
                             </a>
                         </li>                        
                         <li>
                             <a href="/musicstore/index.php/userDetails/index">
-                                <i class="fa fa-calendar"></i> <span>Users</span>
+                                <i class="fa fa-calendar"></i> <span>Manage Users</span>
                             </a>
                         </li>
                         <li>
-                            <a href="pages/mailbox.html">
-                                <i class="fa fa-envelope"></i> <span>Mailbox</span>
-                                <small class="badge pull-right bg-yellow">12</small>
+                            <a href="/musicstore/index.php/TblAlbumCategory/index">
+                                <i class="fa fa-envelope"></i> <span>Manage Songs Categories</span>
                             </a>
                         </li>
                         <li class="treeview">

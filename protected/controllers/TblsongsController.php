@@ -77,7 +77,6 @@ class TblSongsController extends Controller
 		              $song_img_name = $_FILES['TblSongs']['name']['song_img_url'];		// Getting Uploaded Image Name
 		              $song_img_temp_name = $_FILES['TblSongs']['tmp_name']['song_img_url'];		// Getting Uploaded Image Temp  Name
 			$song_img_url = TbladminController::Uploader( $song_img_name, $song_img_temp_name, $type = 'image', Yii::app()->params['song_thumb_url']);
-
 			/*
 			*	Purpose: Upload Songs
 			*/
@@ -142,8 +141,6 @@ class TblSongsController extends Controller
 	 */
 	public function actionIndex()
 	{
-		
-
 		$dataProvider=new CActiveDataProvider('TblSongs');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
@@ -164,7 +161,7 @@ class TblSongsController extends Controller
 			'model'=>$model,
 		));
 	}
- 
+
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.

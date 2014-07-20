@@ -31,7 +31,7 @@
 
                 <!-- Main content -->
                 <section class="content">
-
+                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/tblalbumcategory/create">Create</a>
 		<div class="box">
                                 <div class="box-header">
                                 </div><!-- /.box-header -->

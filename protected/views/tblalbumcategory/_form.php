@@ -15,34 +15,26 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+        <div class="form-box" id="login-box" style="margin:0px auto 0">
+            <div class="header">Manage Songs Categories</div>
+                <div class="body bg-gray">
+                    <div class="form-group">
 		<?php echo $form->labelEx($model,'album_category_name'); ?>
-		<?php echo $form->textField($model,'album_category_name',array('size'=>60,'maxlength'=>250)); ?>
+		<?php echo $form->textField($model,'album_category_name',array('size'=>60,'maxlength'=>250, 'class'=> 'form-control')); ?>
 		<?php echo $form->error($model,'album_category_name'); ?>
-	</div>
+		</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'album_category_created_by'); ?>
-		<?php echo $form->textField($model,'album_category_created_by'); ?>
-		<?php echo $form->error($model,'album_category_created_by'); ?>
-	</div>
-
-	<div class="row">
+                    <div class="form-group">
 		<?php echo $form->labelEx($model,'album_category_is_active'); ?>
-		<?php echo $form->textField($model,'album_category_is_active',array('size'=>1,'maxlength'=>1)); ?>
+		<?php echo $form->textField($model,'album_category_is_active',array('size'=>1,'maxlength'=>1, 'class'=> 'form-control')); ?>
 		<?php echo $form->error($model,'album_category_is_active'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'album_category_created_on'); ?>
-		<?php echo $form->textField($model,'album_category_created_on'); ?>
-		<?php echo $form->error($model,'album_category_created_on'); ?>
+                    <div class="form-group">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class' => 'btn bg-olive btn-block' )); ?>
 	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
-
+      </div>
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->

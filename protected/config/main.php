@@ -126,8 +126,8 @@ return array(
 		'img_thumb_url' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/images/',		
 		'song_thumb_url' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/songs_thumb/',
 		'song_url' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/songs/',
-*/
-	),
+
+*/	),
 
 );
 

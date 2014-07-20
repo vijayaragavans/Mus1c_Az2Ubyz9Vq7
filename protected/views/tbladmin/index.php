@@ -1,13 +1,5 @@
-<?php
-/* @var $this TbladminController */
-
-$this->breadcrumbs=array(
-	'Manage User',
-);
-?>
         <!-- DATA TABLES -->
         <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
-
     <div class="skin-blue">
         <!-- header logo: style can be found in header.less -->
         <header class="header">
@@ -30,11 +22,11 @@ $this->breadcrumbs=array(
                 <section class="content-header">
                     <h1>
                         Music eStore
-                        <small>Manage Songs</small>
+                        <small>User Profile</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li class="active">Manage Songs</li>
+                        <li class="active">User Profile</li>
                     </ol>
                 </section>
 
@@ -47,23 +39,17 @@ $this->breadcrumbs=array(
     'htmlOptions'=>array('enctype'=>'multipart/form-data'),
 )); ?> 
 
-		<div class="box">
-                                <div class="box-header">
-                                </div><!-- /.box-header -->
-                                <div class="box-body table-responsive">
-
-
-		<div class="box-body">
-                                        <div class="form-group">
-                                        </div>
-                                        <div class="form-group">
+        <div class="form-box" id="login-box" style="margin: 0px auto 0;">
+            <div class="header">User Profile</div>
+                <div class="body bg-gray">
+                    <div class="form-group">
 				<?php echo $form->labelEx($model,'user_name'); ?>
-				<?php echo $form->textField($model,'user_name',array('size'=>60,'maxlength'=>250)); ?>
+				<?php echo $form->textField($model,'user_name',array('size'=>60,'maxlength'=>250, 'class'=> 'form-control', 'value' => $model->user_name )); ?>
 				<?php echo $form->error($model,'user_name'); ?>
                                         </div>
                                         <div class="form-group">
 				<?php echo $form->labelEx($model,'user_password'); ?>
-				<?php echo $form->passwordField($model,'user_password'); ?>
+				<?php echo $form->passwordField($model,'user_password', array('class'=> 'form-control', 'value' => '')); ?>
 				<?php echo $form->error($model,'user_password'); ?>
                                         </div>
 

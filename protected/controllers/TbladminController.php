@@ -14,6 +14,7 @@
 	{
 		$model = new TblAdmins();
 		$current_user_id = Yii::app()->session['user_id'];
+	              $model = TblAdmins::model()->findByAttributes(array("user_id"=>$current_user_id));
 		if(isset($_POST['ajax']) && $_POST['ajax']==='profile-form')
 		{
 			echo CActiveForm::validate($model);
@@ -26,17 +27,19 @@
             			              $model = TblAdmins::model()->findByAttributes(array("user_id"=>$current_user_id));
 			              $file_name = $_FILES['TblAdmins']['name']['user_thumb'];		// Getting Uploaded Image Name
 			              $file_temp_name = $_FILES['TblAdmins']['tmp_name']['user_thumb'];		// Getting Uploaded Image Temp  Name
-			              $user_thumb = $this->Uploader( $file_name, $file_temp_name, $type = 'image', Yii::app()->params['img_thumb_url']);	// Uploading Files from Uploader Function
+			              if($file_temp_name != ''){
+				              $user_thumb = $this->Uploader( $file_name, $file_temp_name, $type = 'image', Yii::app()->params['img_thumb_url']);	// Uploading Files from Uploader Function
+				              ( $user_thumb != '' ) ? $model->user_thumb = Yii::app()->session['user_thumb']  = $user_thumb : '';			              	
+			              }
 			              ( $_POST['TblAdmins']['user_name'] != '' ) ? $model->user_name = Yii::app()->session['user_name']  = $_POST['TblAdmins']['user_name']  : '';
 			              ( $_POST['TblAdmins']['user_password']  !='' ) ? $model->user_password = md5( $_POST['TblAdmins']['user_password'] ) :'';
 			        //Note $model->file_status is the available property to hold status of file upload
-			              ( $user_thumb != '' ) ? $model->user_thumb = Yii::app()->session['user_thumb']  = $user_thumb : '';
 			              //$user->user_privilages = md5( $_POST['TblAdmins']['user_privilages'] );
 				if($model->save())
 
 					$this->redirect('/musicstore/index.php/site/dashboard');			
 			}
-			$this->render('index', array('model' => $model));			
+			$this->render('index', array('model' => $model ));			
 		}
 	}
 

@@ -4854,3 +4854,39 @@ REQUEST_URI=/musicstore/index.php/tbladmin/index
 in C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\controllers\TbladminController.php (75)
 in C:\wamp\www\Hai_interactive\adminpanel\musicstore\protected\controllers\TbladminController.php (29)
 in C:\wamp\www\Hai_interactive\adminpanel\musicstore\index.php (13)
+2014/07/20 03:07:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TblAlbumCategory/index".' in /home3/rightern/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home3/rightern/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('TblAlbumCategor...')
+#1 /home3/rightern/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home3/rightern/public_html/admin_panel/musicstore/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicstore/index.php/TblAlbumCategory/index
+HTTP_REFERER=http://admin.haiinteractive.com/musicstore/index.php/site/dashboard
+---
+2014/07/20 03:08:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TblAlbumCategory/index".' in /home3/rightern/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home3/rightern/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('TblAlbumCategor...')
+#1 /home3/rightern/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home3/rightern/public_html/admin_panel/musicstore/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicstore/index.php/TblAlbumCategory/index
+HTTP_REFERER=http://admin.haiinteractive.com/musicstore/index.php/site/dashboard
+---
+2014/07/20 03:08:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TblAlbumCategory/index".' in /home3/rightern/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home3/rightern/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('TblAlbumCategor...')
+#1 /home3/rightern/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home3/rightern/public_html/admin_panel/musicstore/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicstore/index.php/TblAlbumCategory/index
+HTTP_REFERER=http://admin.haiinteractive.com/musicstore/index.php/site/dashboard
+---
+2014/07/20 03:08:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TblAlbumCategory/index".' in /home3/rightern/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home3/rightern/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('TblAlbumCategor...')
+#1 /home3/rightern/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home3/rightern/public_html/admin_panel/musicstore/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/musicstore/index.php/TblAlbumCategory/index
+HTTP_REFERER=http://admin.haiinteractive.com/musicstore/index.php/site/dashboard
+---

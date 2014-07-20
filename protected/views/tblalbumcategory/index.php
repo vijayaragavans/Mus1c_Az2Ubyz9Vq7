@@ -1,4 +1,4 @@
-        <!-- DATA TABLES -->
+         <!-- DATA TABLES -->
         <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
     <div class="skin-blue">
         <!-- header logo: style can be found in header.less -->

@@ -113,12 +113,12 @@ return array(
 */	// Staging Server Uploader Config
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'vijay@haiinteractive.com',
 		'powered_by' => 'www.haiinteractive.com',
 		'project' => 'Music eStore',
 
 		'img_browse_url' => 'http://demo.haiinteractive.com/musicestore/images/',
-		'img_thumb_url' => '/home3/rightern/public_html/demo/musicestore/images/',		
+		'img_thumb_url' => '/home3/rightern/public_html/demo/musicestore/images/images/',		
 		'song_thumb_url' => '/home3/rightern/public_html/demo/musicestore/images/songs_thumb/',
 		'song_url' => '/home3/rightern/public_html/demo/musicestore/images/songs/',
 

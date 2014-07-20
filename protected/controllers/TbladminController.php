@@ -75,7 +75,7 @@
 				move_uploaded_file($temp_name, $new_file ) or die( 'Error in Moving Files');
 			}
 		}
-		 if(!$errors) 
+		 if(!$errors)  
 		 {
 		 	return $image_name;
 		 }	

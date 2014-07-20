@@ -1,7 +1,7 @@
 <?php
 /* @var $this TblAlbumCategoryController */
 /* @var $model TblAlbumCategory */
- 
+
 $this->breadcrumbs=array(
 	'Tbl Album Categories'=>array('index'),
 	'Manage',

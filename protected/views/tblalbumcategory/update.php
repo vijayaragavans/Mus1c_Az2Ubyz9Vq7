@@ -1,7 +1,7 @@
 <?php
 /* @var $this TblAlbumCategoryController */
 /* @var $model TblAlbumCategory */
- 
+
 $this->breadcrumbs=array(
 	'Tbl Album Categories'=>array('index'),
 	$model->album_category_id=>array('view','id'=>$model->album_category_id),

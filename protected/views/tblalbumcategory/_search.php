@@ -1,9 +1,9 @@
-<?php  
+<?php
 /* @var $this TblAlbumCategoryController */
 /* @var $model TblAlbumCategory */
 /* @var $form CActiveForm */
 ?>
- 
+
 <div class="wide form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(

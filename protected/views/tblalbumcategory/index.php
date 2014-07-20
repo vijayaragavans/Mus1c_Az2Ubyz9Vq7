@@ -41,9 +41,8 @@
                                             <tr>
                                                 <th>Category ID</th>
                                                 <th>Category Name</th>
-                                                <th>Category Created By</th>
-                                                <th>Is Active</th>
                                                 <th>Created On</th>
+                                                <th></th>
                                                 <th></th>
                                             </tr>
                                         </thead>

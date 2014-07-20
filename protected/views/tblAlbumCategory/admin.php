@@ -1,16 +1,4 @@
 <?php
-/* @var $this TblAlbumCategoryController */
-/* @var $model TblAlbumCategory */
-
-$this->breadcrumbs=array(
-	'Tbl Album Categories'=>array('index'),
-	'Manage',
-);
-
-$this->menu=array(
-	array('label'=>'List TblAlbumCategory', 'url'=>array('index')),
-	array('label'=>'Create TblAlbumCategory', 'url'=>array('create')),
-);
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
@@ -26,32 +14,73 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Tbl Album Categories</h1>
+        <!-- DATA TABLES -->
+        <link href="<?php echo Yii::app()->request->baseUrl; ?>/files/css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
+    <div class="skin-blue">
+        <!-- header logo: style can be found in header.less -->
+        <header class="header">
+            <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/index" class="logo" style="height: 65px;">
+	           <img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/musicstore.png" style="padding-top:10px; padding-left:20px; position:absolute; z-index:99999;">
+                <!-- Add the class icon to your logo image or logo icon to add the margining -->
+            </a>
+            <!--   Include Top header Menus Starts-->
+            <?php echo $this->renderPartial('../site/top_header'); ?>
+            <!--   Include Top header Menus Ends-->
+        </header>
+        <div class="wrapper row-offcanvas row-offcanvas-left">
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
+            <!--   Include Left side MenuBar Starts-->
+            <?php echo $this->renderPartial('../site/sidebar_menu'); ?>
+            <!--   Include Left side MenuBar Ends-->
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'tbl-album-category-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'album_category_id',
-		'album_category_name',
-		'album_category_created_by',
-		'album_category_is_active',
-		'album_category_created_on',
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>
+            <aside class="right-side">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Dashboard
+                        <small>Manage Songs Category</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li class="active">Manage Songs Category</li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+
+		<div class="box">
+			<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+			<div class="search-form" style="display:none">
+			<?php $this->renderPartial('_search',array(
+				'model'=>$model,
+			)); ?>
+			</div><!-- search-form -->
+				<?php $this->widget('zii.widgets.grid.CGridView', array(
+					'id'=>'tbl-album-category-grid',
+					'dataProvider'=>$model->search(),
+					'filter'=>$model,
+					'columns'=>array(
+						'album_category_id',
+						'album_category_name',
+						'album_category_created_by',
+						'album_category_is_active',
+						'album_category_created_on',
+						array(
+							'class'=>'CButtonColumn',
+						),
+					),
+				)); ?>
+                            </div><!-- /.box -->
+                            </tbody>
+                         </table>
+                        </div>
+                       </div>
+                      </section>
+                    </aside>
+                  </div>
+                </div>               
+
+
+

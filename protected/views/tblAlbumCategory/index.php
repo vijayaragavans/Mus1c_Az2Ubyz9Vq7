@@ -31,7 +31,7 @@
 
                 <!-- Main content -->
                 <section class="content">
-
+                        <a href='<?php echo Yii::app()->request->baseUrl; ?>/index.php/TblAlbumCategory/create'>Create</a>
 		<div class="box">
                                 <div class="box-header">
                                 </div><!-- /.box-header -->
@@ -41,7 +41,6 @@
                                             <tr>
                                                 <th>Category ID</th>
                                                 <th>Category Name</th>
-                                                <th>Category Created By</th>
                                                 <th>Is Active</th>
                                                 <th>Created On</th>
                                                 <th></th>

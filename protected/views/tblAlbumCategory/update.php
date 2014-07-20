@@ -1,21 +1,53 @@
-<?php
-/* @var $this TblAlbumCategoryController */
-/* @var $model TblAlbumCategory */
+    <div class="skin-blue">
+        <!-- header logo: style can be found in header.less -->
+        <header class="header">
+            <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/index" class="logo" style="height: 65px;">
+	           <img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/musicstore.png" style="padding-top:10px; padding-left:20px; position:absolute; z-index:99999;">
+                <!-- Add the class icon to your logo image or logo icon to add the margining -->
+            </a>
+            <!--   Include Top header Menus Starts-->
+            <?php echo $this->renderPartial('../site/top_header'); ?>
+            <!--   Include Top header Menus Ends-->
+        </header>
+        <div class="wrapper row-offcanvas row-offcanvas-left">
 
-$this->breadcrumbs=array(
-	'Tbl Album Categories'=>array('index'),
-	$model->album_category_id=>array('view','id'=>$model->album_category_id),
-	'Update',
-);
+            <!--   Include Left side MenuBar Starts-->
+            <?php echo $this->renderPartial('../site/sidebar_menu'); ?>
+            <!--   Include Left side MenuBar Ends-->
 
-$this->menu=array(
-	array('label'=>'List TblAlbumCategory', 'url'=>array('index')),
-	array('label'=>'Create TblAlbumCategory', 'url'=>array('create')),
-	array('label'=>'View TblAlbumCategory', 'url'=>array('view', 'id'=>$model->album_category_id)),
-	array('label'=>'Manage TblAlbumCategory', 'url'=>array('admin')),
-);
-?>
+            <aside class="right-side">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Music eStore
+                        <small>Manage Album Category</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li class="active">Manage Album Category</li>
+                    </ol>
+                </section>
 
-<h1>Update TblAlbumCategory <?php echo $model->album_category_id; ?></h1>
+                <!-- Main content -->
+                <section class="content">
 
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+		<div class="box">
+                                <div class="box-header">
+                                </div><!-- /.box-header -->
+                                <div class="box-body table-responsive">
+			<?php
+			/* @var $this TblSongsController */
+			/* @var $dataProvider CActiveDataProvider */
+			?>
+				<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                            </tbody>
+                         </table>
+                        </div>
+                       </div>
+                      </section>
+                    </aside>
+                  </div>
+                </div>               
+

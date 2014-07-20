@@ -1,4 +1,4 @@
-<?php 
+<?php  
 /* @var $this TblAlbumCategoryController */
 /* @var $model TblAlbumCategory */
 /* @var $form CActiveForm */

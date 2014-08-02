@@ -48,7 +48,6 @@
 					'song_title',
 					'song_category',
 					'song_img_url',
-					'song_url',
 					'song_description',
 					'cong_created_on',
 				),

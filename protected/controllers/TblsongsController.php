@@ -65,28 +65,41 @@ class TblSongsController extends Controller
 	public function actionCreate()
 	{
 		$model=new TblSongs;
+		$songs_url = new TblSongsUrl;
 		$this->current_date = date('Y-m-d H:i:s');
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-		if(isset($_POST['TblSongs']))
+		if(isset($_POST['_validate']) )
 		{
 			$model->attributes=$_POST['TblSongs'];
 			/*
 			*	Purpose: Upload Song Thumb Image
 			*/
+			//print_r($_FILES['TblSongs']['name']['song_urlss'][0]);
+
 		              $song_img_name = $_FILES['TblSongs']['name']['song_img_url'];		// Getting Uploaded Image Name
 		              $song_img_temp_name = $_FILES['TblSongs']['tmp_name']['song_img_url'];		// Getting Uploaded Image Temp  Name
 			$song_img_url = TbladminController::Uploader( $song_img_name, $song_img_temp_name, $type = 'image', Yii::app()->params['song_thumb_url']);
 			/*
 			*	Purpose: Upload Songs
 			*/
-		              $song_name = $_FILES['TblSongs']['name']['song_url'];		// Getting Uploaded Image Name
-		              $song_temp_name = $_FILES['TblSongs']['tmp_name']['song_url'];		// Getting Uploaded Image Temp  Name
-			$song_url = TbladminController::Uploader( $song_name, $song_temp_name, $type = 'music', Yii::app()->params['song_url']);
 			$model->song_img_url = "$song_img_url";
-			$model->song_url = "$song_url";
 			$model->cong_created_on = "$this->current_date";
-			if($model->save()){
+/*			echo $model->song_category. ' ' .$model->song_title. ' ' .$model->song_description. ' ' . $song_img_url. ' ' .$model->song_tags;
+			die;
+*/			if($model->save()){
+				$file_count = sizeof($_FILES['TblSongsUrl']['name']['song_url'] );
+				for($i=0; $i < $file_count; $i++ ){
+					$songs_url->song_id = $model->song_id;
+				              $song_name = $_FILES['TblSongsUrl']['name']['song_url'][$i];		// Getting Uploaded Image Name
+				              $song_temp_name = $_FILES['TblSongsUrl']['tmp_name']['song_url'][$i];		// Getting Uploaded Image Temp  Name
+					$song_url = TbladminController::Uploader( $song_name, $song_temp_name, $type = 'music', Yii::app()->params['song_url']);
+					$songs_url->song_url = "$song_url";
+					$songs_url->song_created_on = "$this->current_date";
+					$songs_url->setPrimaryKey(NULL);
+					 $songs_url->isNewRecord = true;
+					$songs_url->save();				
+				}
 				$this->redirect(array('view','id'=>$model->song_id));
 			}else{
 				Yii::app()->user->setFlash('error', "File format is mismatching. Try Again");				
@@ -94,7 +107,7 @@ class TblSongsController extends Controller
 		}
 
 		$this->render('create',array(
-			'model'=>$model,
+			'model'=>$model, 'songs'=>$songs_url,
 		));
 	}
 

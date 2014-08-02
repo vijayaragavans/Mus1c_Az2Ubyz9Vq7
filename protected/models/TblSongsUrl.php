@@ -1,21 +1,20 @@
 <?php
 
 /**
- * This is the model class for table "tbl_songs".
+ * This is the model class for table "tbl_songs_url".
  *
- * The followings are the available columns in table 'tbl_songs':
+ * The followings are the available columns in table 'tbl_songs_url':
+ * @property integer $song_url_id
  * @property integer $song_id
- * @property string $song_title
- * @property integer $song_category
- * @property string $song_description
- * @property string $cong_created_on
+ * @property string $song_url
+ * @property string $song_created_on
  */
-class TblSongs extends CActiveRecord
+class TblSongsUrl extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return TblSongs the static model class
+	 * @return TblSongsUrl the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -27,7 +26,7 @@ class TblSongs extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'tbl_songs';
+		return 'tbl_songs_url';
 	}
 
 	/**
@@ -38,12 +37,12 @@ class TblSongs extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('song_title, song_category, song_description, song_img_url, song_tags', 'required'),
-			array('song_category', 'numerical', 'integerOnly'=>true),
-			array('song_title', 'length', 'max'=>250),
+			array('song_id, song_url, song_created_on', 'required'),
+			array('song_id', 'numerical', 'integerOnly'=>true),
+			array('song_url', 'length', 'max'=>250),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('song_id, song_title, song_category, song_description, song_img_url, song_tags, cong_created_on', 'safe', 'on'=>'search'),
+			array('song_url_id, song_id, song_url, song_created_on', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -64,13 +63,10 @@ class TblSongs extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+			'song_url_id' => 'Song Url',
 			'song_id' => 'Song',
-			'song_title' => 'Song Title',
-			'song_category' => 'Song Category',
-			'song_description' => 'Song Description',
-			'song_img_url'	=> 'Song Image URL',
-			'song_tags'	=> 'Song Tags',
-			'cong_created_on' => 'Cong Created On',
+			'song_url' => 'Song Url',
+			'song_created_on' => 'Song Created On',
 		);
 	}
 
@@ -85,13 +81,10 @@ class TblSongs extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('song_url_id',$this->song_url_id);
 		$criteria->compare('song_id',$this->song_id);
-		$criteria->compare('song_title',$this->song_title,true);
-		$criteria->compare('song_category',$this->song_category);
-		$criteria->compare('song_description',$this->song_description,true);
-		$criteria->compare('song_img_url',$this->song_img_url,true);
-		$criteria->compare('song_tags',$this->song_tags,true);
-		$criteria->compare('cong_created_on',$this->cong_created_on,true);
+		$criteria->compare('song_url',$this->song_url,true);
+		$criteria->compare('song_created_on',$this->song_created_on,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

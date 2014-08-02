@@ -5,6 +5,7 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Music eStore',
@@ -59,7 +60,6 @@ return array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		),
 */		// uncomment the following to use a MySQL database
-		
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=rightern_musicstore',
 			'emulatePrepare' => true,
@@ -126,8 +126,8 @@ return array(
 		'img_thumb_url' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/images/',		
 		'song_thumb_url' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/songs_thumb/',
 		'song_url' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/songs/',
-
-*/	),
+*/
+	),
 
 );
 

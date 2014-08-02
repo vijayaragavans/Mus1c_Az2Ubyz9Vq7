@@ -23,7 +23,7 @@
                 <section class="content-header">
                     <h1>
                         Dashboard
-                        <small>Control panel</small>
+                        <small>Create TblSongs</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -38,12 +38,10 @@
                                 <div class="box-header">
                                 </div><!-- /.box-header -->
                                 <div class="box-body table-responsive">
-
-			<h1>Create TblSongs</h1>
                                             <div class="error">
                                                 <?php echo Yii::app()->user->getFlash('error'); ?>
                                             </div>
-			<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+			<?php echo $this->renderPartial('_form', array('model'=>$model, 'songs' => $songs )); ?>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                             </tbody>

@@ -23,6 +23,17 @@
                                 <i class="fa fa-envelope"></i> <span>Manage Songs Categories</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="/musicstore/index.php/TblAlbumCategory/index">
+                                <i class="fa fa-envelope"></i> <span>Manage Subscribers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/musicstore/index.php/SubscribersOffer/index">
+                                <i class="fa fa-envelope"></i> <span>Subscribers Offer</span>
+                            </a>
+                        </li>
+
                         <li class="treeview">
                             <a href="#">
                                 <i class="fa fa-folder"></i> <span>Examples</span>

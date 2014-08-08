@@ -1,4 +1,5 @@
  <?php
+		ob_start();
  
 class EmailCampaignController extends Controller
 {
@@ -17,7 +18,6 @@ class EmailCampaignController extends Controller
 			'accessControl', // perform access control for CRUD operations
 			//'postOnly + delete', // we only allow deletion via POST request
 		);
-		ob_start();
 	}
 
 	/**

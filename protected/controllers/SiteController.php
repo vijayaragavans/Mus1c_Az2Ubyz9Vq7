@@ -30,9 +30,9 @@ class SiteController extends Controller
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		if(Yii::app()->user->name =='Guest')
-			$this->redirect('/musicstore/index.php/site/login');
+			$this->redirect('/musicstore/site/login');
 		else
-			$this->redirect('/musicstore/index.php/site/dashboard');
+			$this->redirect('/musicstore/site/dashboard');
 
 	}
 
@@ -79,9 +79,9 @@ class SiteController extends Controller
 	public function user_validate(){
 		if(Yii::app()->user->name == 'Guest')
 		{
-			$this->redirect('/musicstore/index.php/site/login');
+			$this->redirect('/musicstore/site/login');
 		}else{
-			$this->redirect('/musicstore/index.php/site/dashboard');
+			$this->redirect('/musicstore/site/dashboard');
 		}
 	}
 
@@ -104,7 +104,7 @@ class SiteController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
-				$this->redirect('/musicstore/index.php/site/dashboard');
+				$this->redirect('/musicstore/site/dashboard');
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));
@@ -119,14 +119,14 @@ class SiteController extends Controller
 		Yii::app()->session->destroy();
 		//$this->redirect(Yii::app()->loginUrl);
 
-		$this->redirect('/musicstore/index.php/site/login');
+		$this->redirect('/musicstore/site/login');
 	}
 
 
 	public function actionDashboard(){
 		if( Yii::app()->user->name == 'Guest')
 		{
-			$this->redirect('/musicstore/index.php/site/login');
+			$this->redirect('/musicstore/site/login');
 		}else{
 			$this->render('dashboard');
 		}

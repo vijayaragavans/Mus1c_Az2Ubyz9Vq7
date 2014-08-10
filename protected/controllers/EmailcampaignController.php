@@ -12,6 +12,12 @@ class EmailCampaignController extends Controller
 	/**
 	 * @return array action filters
 	 */
+	public function init()
+	{
+		$user_validate = Yii::app()->createController('validate');		//returns array containing controller instance and action index.
+		$user_validate[0]->user_validate();
+	}
+
 	public function filters()
 	{
 		return array(

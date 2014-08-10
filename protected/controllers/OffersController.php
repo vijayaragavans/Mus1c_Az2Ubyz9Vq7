@@ -11,14 +11,19 @@ class OffersController extends Controller
 	/**
 	 * @return array action filters
 	 */
+	public function init()
+	{
+		$user_validate = Yii::app()->createController('validate');		//returns array containing controller instance and action index.
+		$user_validate[0]->user_validate();
+	}
 	public function filters()
 	{
 		return array(
 			'accessControl', // perform access control for CRUD operations
 			//'postOnly + delete', // we only allow deletion via POST request
 		);
-	}
 
+	}
 	/**
 	 * Specifies the access control rules.
 	 * This method is used by the 'accessControl' filter.
@@ -124,6 +129,8 @@ class OffersController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$validate = Yii::app()->createController('validate');		//returns array containing controller instance and action index.		
+		$validate[0]->user_validate();
 		$dataProvider=new CActiveDataProvider('Offers');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,

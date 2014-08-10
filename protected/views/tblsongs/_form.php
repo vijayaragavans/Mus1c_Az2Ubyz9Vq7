@@ -78,13 +78,13 @@
 
                                          <div class="form-group">
 				<?php echo $form->labelEx($model,'song_description'); ?>
-				<?php echo $form->textField($model,'song_description',array('size'=>60,'maxlength'=>250, 'class'=> 'form-control')); ?>
+				<?php echo $form->textArea($model,'song_description',array( 'class'=> 'form-control')); ?>
 				<?php echo $form->error($model,'song_description'); ?>
 			</div>
 
                                          <div class="form-group">
 				<?php echo $form->labelEx($model,'song_tags'); ?>
-				<?php echo $form->textField($model,'song_tags',array('size'=>50,'maxlength'=>50, 'class'=> 'form-control' )); ?>
+				<?php echo $form->textField($model,'song_tags',array('size'=>50, 'class'=> 'form-control' )); ?>
 				<?php echo $form->error($model,'song_tags'); ?>
 				<input type="hidden" name='_validate' id='_validate'>
 			</div>

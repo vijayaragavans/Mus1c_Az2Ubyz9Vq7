@@ -9,7 +9,11 @@ class TblAlbumCategoryController extends Controller
 	public $layout='//layouts/column2';
 
 	public $current_date;
-
+	public function init()
+	{
+		$user_validate = Yii::app()->createController('validate');		//returns array containing controller instance and action index.
+		$user_validate[0]->user_validate();
+	}
 	/**
 	 * @return array action filters
 	 */

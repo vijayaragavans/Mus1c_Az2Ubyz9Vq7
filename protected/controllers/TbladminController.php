@@ -2,14 +2,13 @@
 
 	class TbladminController extends Controller
 	{
-   	public function user_validate(){
-		if(Yii::app()->user->name == 'Guest')
-		{
-			$this->redirect('/musicstore/index.php/site/login');
-		}else{
-			return true;
-		}
+
+	public function init()
+	{
+		$user_validate = Yii::app()->createController('validate');		//returns array containing controller instance and action index.
+		$user_validate[0]->user_validate();
 	}
+
 	public function actionIndex()
 	{
 		$model = new TblAdmins();
@@ -20,8 +19,6 @@
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
-		if($this->user_validate()){
-
 			if(isset($_POST['TblAdmins']))
 			{
             			              $model = TblAdmins::model()->findByAttributes(array("user_id"=>$current_user_id));
@@ -40,7 +37,6 @@
 					$this->redirect('/musicstore/index.php/site/dashboard');			
 			}
 			$this->render('index', array('model' => $model ));			
-		}
 	}
 
 	public function actionTest(){

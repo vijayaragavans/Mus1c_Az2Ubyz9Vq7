@@ -1,7 +1,7 @@
     <div class="skin-blue">
         <!-- header logo: style can be found in header.less -->
         <header class="header">
-            <a href="<?php echo Yii::app()->request->baseUrl; ?>index.php/site/index" class="logo" style="height: 65px;">
+            <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/index" class="logo" style="height: 65px;">
 	           <img src="<?php echo Yii::app()->request->baseUrl; ?>/files/img/musicstore.png" style="padding-top:10px; padding-left:20px; position:absolute; z-index:99999;">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
             </a>

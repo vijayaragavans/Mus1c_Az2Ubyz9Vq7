@@ -35,21 +35,48 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/Hai_interactive/demo/musicestore/protected/config/main.php",
+		"/C/wamp/www/Hai_interactive/demo/musicestore/protected/models/TblSongs.php",
+		"/C/wamp/www/Hai_interactive/demo/musicestore/protected/views/albums/index.php",
+		"/C/wamp/www/Hai_interactive/demo/musicestore/protected/controllers/AlbumsController.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/controllers/AlbumpagecategoriesController.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/config/main.php",
 		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/TblSongs.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/TblAdmins.php",
+		"/C/wamp/www/Hai_interactive/demo/musicestore/images/songs/1407600196Tamilmp3world.Com - Bhagavan Rap Song.mp3",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/files/less/timeline.less",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/controllers/EmailcampaignController.php",
+		"/C/wamp/www/Hai_interactive/demo/musicestore/images/songs/1407601731Kangal Irandal - Belly Raj, Deepa Mariam.mp3",
+		"/C/wamp/www/Hai_interactive/demo/musicestore/images/songs/1407602966Tanka Dunga - Pandi & Lakshmi & Raja & Kala & Saroja .mp3",
+		"/C/wamp/www/Hai_interactive/demo/musicestore/assets/d6c9955c/jui/css/base/jquery.ui.selectable.css",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/assets/d6c9955c/jui/css/base/jquery.ui.selectable.css",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/files/js/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js",
+		"/C/wamp/www/Hai_interactive/demo/musicestore/protected/models/UserDetails.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/UserDetails.php",
+		"/C/wamp/www/Hai_interactive/demo/musicestore/protected/models/EmailCampaign.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/EmailCampaign.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/TblAlbumCategory.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/Albumpagecategories.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/runtime/gii-1.1.11/ModelCode.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/LoginForm.php",
+		"/C/wamp/www/Hai_interactive/demo/musicestore/images/songs/1407601367Maattram_Ondrudhaan_Maaraadhadhu-StarMusiQ.Com.mp3",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/css/main.css",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/ContactForm.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/components/Controller.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/files/js/plugins/ckeditor/config.js",
+		"/C/wamp/www/Hai_interactive/demo/musicestore/images/songs/1407864744Tamilmp3world.Com - Kadhal Oru.mp3",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/files/less/callout.less",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/files/css/AdminLTE.css",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/files/less/alerts.less",
 		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/tblsongs/_form.php",
 		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/site/sidebar_menu.php",
 		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/albumpagecategories/index.php",
-		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/controllers/AlbumpagecategoriesController.php",
 		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/controllers/TblsongsController.php",
-		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/Albumpagecategories.php",
-		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/files/css/AdminLTE.css",
-		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/files/less/alerts.less",
 		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/TblSongsUrl.php",
 		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/tblsongs/index.php",
 		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/tblsongs/_view.php",
 		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/tblsongs/admin.php",
 		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/tblsongs/_search.php",
-		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/TblAdmins.php",
 		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/controllers/TbladminController.php",
 		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/index-test.php",
 		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/albumpagecategories/update.php",
@@ -62,7 +89,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 57.0
 	},
 	"find_in_files":
 	{
@@ -76,6 +103,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"slider1_container",
+			"examples",
+			"International Hits"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -111,7 +141,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 49.0
 	},
 	"input":
 	{
@@ -147,7 +177,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 0.0
+		"height": 94.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -155,6 +185,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"tbl",
+				"musicestore\\protected\\models\\TblSongs.php"
+			],
+			[
+				"contalbum",
+				"musicestore\\protected\\controllers\\AlbumsController.php"
+			],
 			[
 				"tblsons",
 				"protected\\models\\TblSongs.php"

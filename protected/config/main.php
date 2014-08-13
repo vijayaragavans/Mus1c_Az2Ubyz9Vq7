@@ -40,9 +40,6 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-		 'upload'=>array(
-		            'class'=>'ext.upload.components.Validate'
-		           ),
            		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(
@@ -121,8 +118,9 @@ return array(
 		'img_thumb_url' => '/home3/rightern/public_html/demo/musicestore/images/images/',		
 		'song_thumb_url' => '/home3/rightern/public_html/demo/musicestore/images/songs_thumb/',
 		'song_url' => '/home3/rightern/public_html/demo/musicestore/images/songs/',
-/*
-		'img_browse_url' => 'http://demo.localhost.com/musicestore/images/',
+
+
+/*		'img_browse_url' => 'http://demo.localhost.com/musicestore/images/',
 		'img_thumb_url' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/images/',		
 		'song_thumb_url' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/songs_thumb/',
 		'song_url' => 'C:/wamp/www/Hai_interactive/demo/musicestore/images/songs/',

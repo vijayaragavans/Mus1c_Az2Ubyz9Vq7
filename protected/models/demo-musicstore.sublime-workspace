@@ -1,0 +1,201 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/TblSongs.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/tblsongs/_form.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/site/sidebar_menu.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/albumpagecategories/index.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/controllers/AlbumpagecategoriesController.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/controllers/TblsongsController.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/Albumpagecategories.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/files/css/AdminLTE.css",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/files/less/alerts.less",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/TblSongsUrl.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/tblsongs/index.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/tblsongs/_view.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/tblsongs/admin.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/tblsongs/_search.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/models/TblAdmins.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/controllers/TbladminController.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/index-test.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/albumpagecategories/update.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/albumpagecategories/create.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/albumpagecategories/admin.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/albumpagecategories/_view.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/albumpagecategories/_form.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/albumpagecategories1/_search.php",
+		"/C/wamp/www/Hai_interactive/adminpanel/musicstore/protected/views/albumpagecategories/_search.php"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "C:\\wamp\\www\\Hai_interactive\\adminpanel\\musicstore"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\wamp\\www\\Hai_interactive\\demo\\musicestore"
+		}
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"tblsons",
+				"protected\\models\\TblSongs.php"
+			],
+			[
+				"tblsongs",
+				"protected\\views\\tblsongs\\_form.php"
+			],
+			[
+				"albumpagecategories",
+				"protected\\views\\albumpagecategories\\index.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

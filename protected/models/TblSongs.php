@@ -39,11 +39,11 @@ class TblSongs extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('song_title, song_category, song_description, song_img_url, song_tags', 'required'),
-			array('song_category', 'numerical', 'integerOnly'=>true),
+			array('song_category, song_album_page_category_id', 'numerical', 'integerOnly'=>true),
 			array('song_title', 'length', 'max'=>250),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('song_id, song_title, song_category, song_description, song_img_url, song_tags, cong_created_on', 'safe', 'on'=>'search'),
+			array('song_id, song_title, song_album_page_category_id, song_category, song_description, song_img_url, song_tags, cong_created_on', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,6 +67,7 @@ class TblSongs extends CActiveRecord
 			'song_id' => 'Song',
 			'song_title' => 'Song Title',
 			'song_category' => 'Song Category',
+			'song_album_page_category_id'		=> 'Song Album Page Category',
 			'song_description' => 'Song Description',
 			'song_img_url'	=> 'Song Image URL',
 			'song_tags'	=> 'Song Tags',
@@ -88,6 +89,7 @@ class TblSongs extends CActiveRecord
 		$criteria->compare('song_id',$this->song_id);
 		$criteria->compare('song_title',$this->song_title,true);
 		$criteria->compare('song_category',$this->song_category);
+		$criteria->compare('song_album_page_category_id',$this->song_album_page_category_id);
 		$criteria->compare('song_description',$this->song_description,true);
 		$criteria->compare('song_img_url',$this->song_img_url,true);
 		$criteria->compare('song_tags',$this->song_tags,true);

@@ -45,6 +45,12 @@
                                 <i class="fa fa-envelope"></i> <span>Manage Email Content</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="/musicstore/albumpagecategories/index">
+                                <i class="fa fa-envelope"></i> <span>Manage Album Page  Category</span>
+                            </a>
+                        </li>
+
                         <li class="treeview">
                             <a href="#">
                                 <i class="fa fa-folder"></i> <span>Examples</span>

@@ -59,7 +59,13 @@
 				<?php echo $form->error($model,'song_title'); ?>
 			</div>
 
-			<div class="row">
+                                         <div class="form-group">
+				<?php echo $form->labelEx($model,'song_album_page_category_id'); ?> :
+				<?php echo $form->dropDownList($model,'song_album_page_category_id', CHtml::listData(Albumpagecategories::model()->findAll(), 'album_page_category_id', 'album_page_category'));?>
+				<?php echo $form->error($model,'song_album_page_category_id'); ?>
+			</div>
+
+                                         <div class="form-group">
 				<?php echo $form->labelEx($model,'song_category'); ?>
 				<?php echo $form->dropDownList($model,'song_category', CHtml::listData(TblAlbumCategory::model()->findAll(), 'album_category_id', 'album_category_name'));?>
 				<?php echo $form->error($model,'song_category'); ?>
